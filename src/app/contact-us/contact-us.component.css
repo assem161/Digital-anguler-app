@@ -1,0 +1,6 @@
+.freebirdFormviewerViewEmbedded .freebirdFormviewerViewFormCard:first-of-type{
+  background: transparent;
+}
+.freebirdCustomFont, .freebirdCustomFont .exportContentArea .exportTextarea{
+  font-family: 'AGENCYB' !important;
+}

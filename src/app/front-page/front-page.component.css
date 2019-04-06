@@ -1,0 +1,21 @@
+.site{
+  margin-top: 15%;
+}
+.con-front{
+    font-family: 'AGENCYB';
+}
+.con-front .d1{
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+
+}
+.con-front a{
+  background: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  padding:0.5rem 3rem;
+  -webkit-clip-path: polygon(0 0, 67% 0, 100% 30%, 100% 70%, 100% 100%, 25% 100%, 0% 75%, 0% 30%);
+clip-path: polygon(0 0, 67% 0, 100% 30%, 100% 70%, 100% 100%, 25% 100%, 0% 75%, 0% 30%);
+}

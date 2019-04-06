@@ -1,0 +1,13 @@
+.workslightbox .light-box .col-md-3{
+  width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.workslightbox .light-box .col-md-3 img{
+  width: 100%;
+  height: auto;
+  border: 10px solid rgba(255 ,255 ,255 ,1);
+}
+.workslightbox .light-box .col-md-3 img:hover{
+  border: 10px solid #5AADCD;
+}

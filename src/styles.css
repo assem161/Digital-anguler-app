@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.container{
+  max-width: 1370px;
+}
+body{
+  overflow-x: hidden;
+  background: url('assets/images/land.jpg');
+  -moz-background: url('assets/images/land.jpg');
+  -webkit-background: url('assets/images/land.jpg');
+  -o-background: url('assets/images/land.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+}

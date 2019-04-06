@@ -1,0 +1,27 @@
+<div class="container">
+    <h3 class="mb-2">Blog posts</h3>
+    <div class="row">
+      <button class="adduser btn btn-block btn-xs mb-4"
+      (click)="showpostForm=!showpostForm">
+        add posts
+      </button>
+      <div *ngIf="showpostForm" class="card col-md-12">
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label for="Email">title</label>
+                    <input type="text" class="form-control" [(ngModel)]="currentPost.title" name="title" #title id="title" placeholder="title">
+                </div>
+                <div class="form-group">
+                  <label for="body">body text</label>
+                  <input type="text" class="form-control" [(ngModel)]="currentPost.body" name="body" #body id="body" placeholder="topic">
+                </div>
+                <div class="form-group">
+                  <input type="hidden" [(ngModel)]="currentPost.id" name="id">
+                </div>        
+                <button *ngIf="!isEdit" (click)=addpost(title.value,body.value) type="submit" class="btn btn-primary">Add topic</button>
+                <button *ngIf="isEdit" (click)=updatepost() type="submit" class="btn btn-block">Edit topic</button>
+              </form>
+        </div>
+      </div>
+    </div> <!--end of forms and add users-->

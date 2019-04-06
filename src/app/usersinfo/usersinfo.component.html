@@ -1,0 +1,61 @@
+<app-navg></app-navg>
+
+<div class="container">
+  <h3 class="mb-2">users information</h3>
+  <div class="row">
+    <button class="adduser btn btn-block btn-xs mb-4"
+    (click)="showUserForm=!showUserForm">
+      add users
+    </button>
+    <div *ngIf="showUserForm" class="card col-md-12">
+      <div class="card-body">
+          <form #userInfo="ngForm" (ngSubmit)="onSubmit(userInfo)">
+              <div class="form-group">
+                  <label for="Email">First name</label>
+                  <input type="text" class="form-control" [(ngModel)]="user.firstName"  ngModel name="firstName" ngModel id="first name" aria-describedby="emailHelp" placeholder="first name">
+                  {{user.firstName}}
+              </div>
+              <div class="form-group">
+                <label for="Email">last name</label>
+                <input type="text" class="form-control" ngModel id="last name"name="lastName" aria-describedby="emailHelp" placeholder="last name">
+              </div>      
+              <div class="form-group">
+                <label for="Email">Email address</label>
+                <input type="email" class="form-control" ngModel id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="exampleSelect1">Country language</label>
+                <select class="form-control" ngModel name="country" id="country">
+                  <option>English</option>
+                  <option>Arabic</option>
+                  <option>france</option>
+                  <option>spain</option>
+                  <option>Gremany</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleTextarea">short describtion</label>
+                <textarea class="form-control" ngModel id="describtion" name="describtion" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+      </div>
+    </div>
+  </div> <!--end of forms and add users-->
+
+
+  <div class="row">
+    <div class="col-md-6">
+      <h2>users</h2>
+      <div class="card">
+        <div class="card-body" *ngFor="let user of users">
+            <h3>{{user.firstName}}</h3>
+            <h3>{{user.lastName}}</h3>
+            <h3>{{user.email}}</h3>
+            <h3>{{user.country}}</h3>
+            <h3>{{user.describtion}}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

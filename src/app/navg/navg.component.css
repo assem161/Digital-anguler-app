@@ -1,0 +1,26 @@
+.bg-light{
+  background: rgba(255 ,255 ,255 ,0) !important;
+}
+.navbar-nav .nav-item a{
+    font-family: 'AGENCYB';
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 100;
+}
+.btn-sign{
+  font-family: 'AGENCYB';
+  background: rgba(255 ,255 ,255 ,0.2);
+  outline: none;
+  border: 1px solid #FFF;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  -webkit-clip-path: polygon(0 0, 67% 0, 100% 30%, 100% 70%, 100% 100%, 25% 100%, 0% 75%, 0% 30%);
+  clip-path: polygon(0 0, 67% 0, 100% 30%, 100% 70%, 100% 100%, 25% 100%, 0% 75%, 0% 30%);
+}
+.btn-sign{
+  margin-right: 0.5rem;
+}

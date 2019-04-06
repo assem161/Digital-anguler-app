@@ -1,0 +1,15 @@
+.about{
+  margin-top: 15%;
+}
+.about h2{
+  font-family: 'AGENCYB';
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.about p{
+  font-family: 'AGENCYB';
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
